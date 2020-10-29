@@ -100,6 +100,7 @@ $endif$
       \closing{Mit freundlichen Grüßen}
     $endif$
 
+
     % ========================================================================
     % Signature (KEYWORD: signature)
     % If no path a signature image is provided, only the name of the sender is
@@ -115,6 +116,23 @@ $endif$
     $else$
       \vskip -1cm
       \usekomavar{fromname}
+    $endif$
+
+    $if(attachement)$
+        \begin{flushleft}
+            $for(attachement)$
+                $if(attachement.header)$
+                    \textbf{$attachement.header$}
+                $endif$
+                \newline
+                $if(attachement.element)$
+                    $for(attachement.element)$
+                        $attachement.element$
+                        \newline
+                    $endfor$
+                $endif$
+            $endfor$
+        \end{flushleft}
     $endif$
   }
 }

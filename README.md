@@ -47,6 +47,11 @@ opening: Dear Bob,
 closing: Best regards
 subject: Let's talk about keys
 signature: ./signature.pdf
+attachement:
+  - header: Attachements
+  - element:
+    - Attachement A
+    - Attachement B
 ```
 
 ---
@@ -77,3 +82,8 @@ signature: ./signature.pdf
   signature parameter is not provided only the sender's name is rendered below
   the closing. **Please note**: The path to the signature must not include
   non-alphanumerical characters (except space, slash and dot).
+- **attachement**: Information about possible attachements. The attachements
+  are placed below the closing of the letter.
+  - **header**: The heading of the attachement part (e.g. Attachements). 
+  - **element**: A single attachement. Add for each attachement a new
+    **element** variable

@@ -13,6 +13,11 @@ opening: Dear Bob,
 closing: Best regards
 subject: Let's talk about keys
 signature: ./signature.pdf
+attachement:
+  - header: Attachements
+  - element:
+    - Attachement A
+    - Attachement B
 ---
 
 Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
